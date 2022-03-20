@@ -1,0 +1,92 @@
+<html>
+<head>
+ <style>
+     button:hover {
+         background-color: rgb(197, 64, 52);
+         color: white;
+
+     }
+option {
+    background: rgba(255,0,0,0.4);
+
+}
+     body {
+         font-family: sans-serif;
+         padding-left: 20%;
+         padding-right: 20%;
+     }
+     label {
+         font-size: 18px;
+         display: block;
+         padding-bottom: 10px;
+     }
+     form {
+         background: rgba(255,0,0,0.4);
+         padding: 40px;
+     }
+     input, select {
+         display: block;
+         width: 100%;
+         padding-bottom: 20 px;
+         
+     }
+ </style>
+    
+</head>
+<body>
+
+<h1 id="title" >FreeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form" >
+<label id="name-label">Name: </label>
+ <input id="name" type="text" placeholder="Enter your name" required> <br>
+ <label id="email-label">Email: </label>
+ <input  id="email" type="email" placeholder="Enter your email" required><br>
+ <label id="number-label">Age(optional): </label>
+ <input  id="number" type="number" placeholder="Age" min="15" max="100"><br>
+ <label>What is your favorite feature of freeCodeCamp?</label>
+ <select id="dropdown">
+    <option value="challenges">Select an option</option>
+    <option value="challenges">Challenges</option>
+    <option value="projects">Projects</option>
+    <option value="community">Community</option>
+    <option value="openSource">OpenSource</option>
+ </select>
+    <p>Would you recommend FreeCodeCamp to your friend</p>
+    <label for="definitely"><input id="definitely" type="radio" value="definitely" name="definitely-maybe-notsure">Definitely</label><br>
+    <label for="maybe"><input id="maybe" type="radio" value="maybe" name="definitely-maybe-notsure">Maybe</label><br>
+    <label for="notsure"> <input id="notsure" type="radio" value="notSure" name="definitely-maybe-notsure">NotSure</label><br>
+    
+    <p>What would you like to see improved?</p>
+        <label for="Front-end Projects">
+        <input id="Front-end Projects" type="checkbox" value="Front-end Projects"name="Choice" checked>Front-end Projects<br>
+        </label>
+        <label for="Back-end Projects">
+            <input id="Back-end Projects" type="checkbox" value="Back-end Projects"name="Choice">Back-end Projects<br>
+            </label>
+     
+            <label for="Data Visualization">
+                <input id="Data Visualization" type="checkbox" value="Data Visualization"name="Choice">Data Visualization<br>
+                </label>
+     
+                <label for="Challenges">
+                    <input id="Challenges" type="checkbox" value="Challenges"name="Choice">Challenges<br>
+                    </label>
+     
+                    <label for="City Meetups">
+                        <input id="City Meetups" type="checkbox" value="City Meetups"name="Choice">City Meetups<br>
+                        </label><br>
+<label for="comments">Any Commments or Suggesions?</label>
+<textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here!">
+    
+     </textarea> <br>
+
+
+      <button type="submit" id="submit">Submit</button>                    
+</form>
+
+
+
+</body>
+
+</html>
